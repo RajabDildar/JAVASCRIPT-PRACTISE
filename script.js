@@ -4,13 +4,12 @@ console.log("Rajab Ali Dildar");
 
 // variable start
 fullname = "myname";
-console.log(fullname);
-// variable ko double ya single quotes ' " mei nahi likhen ge
+console.log(fullname); // variable name (i.e, fullname) ko double ya single quotes ' " mei nahi likhen ge. warna vo string ban jae ga
 myage = 24;
-console.log(myage);
+console.log(myage); // variable name (i.e, myage) ko double ya single quotes ' " mei nahi likhen ge. warna vo string ban jae ga
 console.log(myage + 3);
 price = 100;
-console.log(price);
+console.log(price); // variable name (i.e, price) ko double ya single quotes ' " mei nahi likhen ge. warna vo string ban jae ga
 let x = Symbol("Hello!");
 let y = BigInt("123");
 
@@ -48,10 +47,10 @@ console.log("a ** b =", a ** b); //exponential operator 5^2  or 5*5=25
 
 let d = 5;
 
-// d--; // this will decrease value of d by 1 from next line
-// d++; // this will increase value of d by 1 from next line
-// --d; // this will decrease value of d by 1 from same line
-// ++d; // this will increase value of d by 1 from same line
+//    d--;                  // this will decrease value of d by 1 from next line
+//    --d;                  // this will decrease value of d by 1 from same line
+//    d++;                  // this will increase value of d by 1 from next line
+//    ++d;                  // this will increase value of d by 1 from same line
 console.log("d = ", d);
 
 // assignment operators          =    +=       -=      *=        %=         **=
@@ -175,6 +174,12 @@ console.log(color3);
 let age3 = 16;
 
 age3 >= 18 ? console.log("adult") : console.log("not adult"); //simpler , compact form of if-else
+
+/* let marks2 = prompt("write your marks obtained  1-100");
+
+let result = marks2 >= 33 ? "you are pass" : "you are fail";
+
+console.log(result); */
 
 // practise question 1
 
