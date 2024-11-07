@@ -133,7 +133,7 @@ alert("congratulations!you've got it"); */
 let str3 = "Apna College";
 console.log("str3 =", str3);
 console.log("str3.length =", str3.length); //space is included in string length i.e, 12
-console.log("str3[0] =", str3[0]);
+console.log("str3[0] =", str3[0]); //string position --> string index/indices    (position starts from 0)
 
 // template literals  (method to use strings,expression and variables)(good practise)
 
@@ -143,7 +143,62 @@ let obj = {
 };
 
 let str4 = `the price of ${obj.item} is ${obj.price} rupees`;
-let str5 = `this is my calculation ${1 + 2 + 3} `;
+let str5 = `this is my calculation 1 + 2 + 3 = ${1 + 2 + 3} `;
 
 console.log(str4);
 console.log(str5);
+
+// escape characters (\n for next line) and (\t for tab space)
+
+console.log("Apna\nCollege");
+console.log("line\nbreak");
+
+// string methods
+
+let string = `a sample string here`;
+string = string.toUpperCase();
+
+console.log(string);
+
+let string2 = `a sample string here`;
+string2 = string2.toLowerCase();
+
+console.log(string2);
+
+let string3 = `          a sample string here             `;
+string3 = string3.trim(); //this remove whitespaces from start and end of string
+
+console.log(string3);
+
+// string slice
+
+let string4 = `abcdefgh`;
+string4 = string4.slice(1, 3); //(here 1 is starting index and 3 is is ending index.) since last index is excluded from slice ,so,it will print 1 to 2 index string character i.e, bc
+
+console.log(string4);
+
+// string concatination
+
+let string5 = `apna`;
+let string6 = ` college`;
+
+let result = string5.concat(string6);
+// let result = string5 + string6; //other method of concatination
+// let result = `I am learning JS from ` + string5 + string6; //other method of concatination
+
+console.log(result);
+
+// string replace method
+
+let str77 = `hello`;
+console.log(str77.replace(`h`, `y`));
+console.log(str77.replace(`lo`, `p`));
+console.log(str77.replace(`hello`, `kia hal hai`));
+
+// practise question
+
+let fullName2 = prompt(`enter your full name.\nDon't use spaces`);
+let userName = `@` + fullName2 + fullName2.length;
+
+alert(`Remember! your username is ${userName}`);
+console.log(`username = ${userName}`);
