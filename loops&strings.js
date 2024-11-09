@@ -65,6 +65,8 @@ updation;
 
 // for-of loop        (it is used for Strings and Arrays.It is Not used for Objects)  (str is short form of string. and val is short form of value. however both are variables and you can use any name for these Variables.)
 
+//for-of loop in strings
+
 let str = "JavaScript";
 for (let val of str) {
   //here val is known as iterator and it targets on individual characters
@@ -79,6 +81,13 @@ for (let val of str2) {
 }
 console.log("str2 size = ", size);
 
+//for-of loop in arrays
+
+let abc = [`javascript`, `css`, `html`];
+for (let val of abc) {
+  console.log(val.toUpperCase());
+}
+
 // for-in loops (it is used for objects and Arrays.)
 
 let student = {
@@ -91,6 +100,54 @@ let student = {
 for (let key in student) {
   console.log("key =", key, "value =", student[key]);
 } //this is used for accessing key-value pairs of objects
+
+//  (for each loop) callback function (for each loop performs an operation but do not change original array)
+
+let cities = [
+  "mumbai",
+  "lahore",
+  "toba",
+  "karachi",
+  "gojra",
+  "rawalpindi",
+  "faisalabad",
+];
+
+// with function
+
+cities.forEach(function cityFunc(val) {
+  console.log(val);
+});
+
+// with arrow function
+
+cities.forEach((val) => {
+  console.log(val);
+});
+
+cities.forEach((val) => {
+  console.log(val.toUpperCase());
+});
+
+// three parameters
+
+cities.forEach((val, idx, cities) => {
+  console.log(val.toUpperCase(), idx, cities);
+});
+
+let numArray = [1, 2, 3, 4, 5, 6, 7];
+
+numArray.forEach((val) => {
+  val *= val;
+  console.log(`val is ${val}`);
+});
+
+/* let calcSquare = (val) => {
+  val = val ** 2;
+  console.log(`val is ${val}`);
+};
+
+numArray.forEach(calcSquare); */
 
 // practise question 1
 
