@@ -245,6 +245,14 @@ let newNums3 = nums3.reduce((prev, val) => {
 
 console.log(`newNums3 = ${newNums3}`);
 
+// converting string to number in prompt because prompt collect data in the form of string (just use + operator before string or Number(str))
+
+/* function myFunc(a, b) {
+  console.log(+a + +b);
+//  console.log(Number(a) + Number(b));
+}
+myFunc(prompt("enter a"), prompt("enter b")); */
+
 // practise questions
 
 let marks = [33, 55, 47, 87, 78, 92, 96, 95];

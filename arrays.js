@@ -70,6 +70,14 @@ for (let i = 0; i < items.length; i++) {
 }
 console.log(items);
 
+/* // creating new array with discount applied using map array method 
+
+let price = [250, 645, 300, 900, 50];
+let newPrice = price.map((val) => {
+  return val * 0.9;
+});
+console.log(`newPrice after 10% discount is ${newPrice}`); */
+
 // array methods
 
 // push method is used to add something at the end of an array
@@ -148,3 +156,9 @@ let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
 // companies.splice(2, 1, "Ola");
 companies.push("Amazon");
 console.log(companies);
+
+//AI practise
+//finding largest number in array
+let arr = [1, 2, 3, 4, 111, 43432, 5];
+let newArr = Math.max(...arr);
+console.log(newArr);

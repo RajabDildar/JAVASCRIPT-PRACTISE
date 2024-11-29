@@ -252,6 +252,14 @@ console.log(str77.replace(`h`, `y`));
 console.log(str77.replace(`lo`, `p`));
 console.log(str77.replace(`hello`, `kia hal hai`));
 
+// converting string to number in prompt because prompt collect data in the form of string (just use + operator before string or Number(str))
+
+/* function myFunc(a, b) {
+  console.log(+a + +b);
+//  console.log(Number(a) + Number(b));
+}
+myFunc(prompt("enter a"), prompt("enter b")); */
+
 // practise question
 
 let fullName2 = prompt(`enter your full name.\nDon't use spaces`);
@@ -259,3 +267,38 @@ let userName = `@` + fullName2 + fullName2.length;
 
 alert(`Remember! your username is ${userName}`);
 console.log(`username = ${userName}`);
+
+// practise questions AI
+//question: Write a loop that prints the numbers from 1 to 100. For multiples of 3, print "Fizz" instead of the number, for multiples of 5, print "Buzz", and for numbers that are multiples of both 3 and 5, print "FizzBuzz".
+for (let i = 0; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log(i, "FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log(i, "Fizz");
+  } else if (i % 5 === 0) {
+    console.log(i, "Buzz");
+  } else {
+    console.log(i);
+  }
+}
+
+//question:Given the string "Hello World", write code that removes all the vowels from the string and prints the result.
+
+/* let str = "hello world!";
+for (let val of str) {
+  if (val !== "a" && val !== "e" && val !== "i" && val !== "o" && val !== "u") {
+    console.log(val);
+  }
+} */
+
+//question:Given the string "Hello World", write code to count the number of vowels and consonants in the string and print the counts.
+
+/*   let count = 0;
+let str = "hello world!";
+for (let val of str) {
+  if (val === "a" || val === "e" || val === "i" || val === "o" || val === "u") {
+    console.log(val);
+    count++;
+  }
+}
+console.log(`count of vowels = ${count}`); */

@@ -194,6 +194,11 @@ if (practiseq1 % 5 === 0) {
   // document.write(practiseq1, "is not a multiple of 5");
 }
 
+/* let practiseQ1 = prompt("enter a practiseQ1 number");
+practiseQ1 % 5 == 0
+  ? console.log(`${practiseQ1} is multiple of 5`)
+  : console.log(`${practiseQ1} is NOT a multiple of 5`); */
+
 // practise question 2
 
 let scoreOfStudent = 32;
@@ -209,3 +214,23 @@ if (scoreOfStudent <= 100 && scoreOfStudent >= 90) {
 } else {
   console.log("you have got grade F");
 }
+
+/* let marksObtained = prompt("enter your marksObtained out of hundred");
+if (marksObtained >= 90 && marksObtained <= 100) {
+  alert("you have got grade A");
+} else if (marksObtained >= 70 && marksObtained <= 89) {
+  alert("you have got grade B");
+} else if (marksObtained >= 60 && marksObtained <= 69) {
+  alert("you have got grade C");
+} else if (marksObtained >= 50 && marksObtained <= 59) {
+  alert("you have got grade D");
+} else if (marksObtained >= 0 && marksObtained <= 49) {
+  alert("you have got grade F");
+} else {
+  alert("please reload the site and enter a valid number between 0-100");
+}
+if (marksObtained >= 0 && marksObtained <= 100) {
+  console.log(`your marksObtained are ${marksObtained} `);
+} else {
+  console.log(`please enter valid marksObtained  `);
+} */
