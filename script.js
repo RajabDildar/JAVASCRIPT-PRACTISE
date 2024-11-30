@@ -103,6 +103,10 @@ console.log("cond1 && cond2 =", cond1 && cond2); // if both two conditions are t
 console.log("cond1 || cond2 =", cond1 || cond2); // if both two conditions or at least one condition is true , then || will give answer true
 console.log("!(h < i)", !(h < i)); // if the condition is true , then ! will give answer false and vice versa.
 
+// short circuiting  (jo value false nahi vo true ho gi.)(false value mei null , undefined, "", false wagera ati hai)
+
+console.log(false || 7 || "rajab" || 5); // OR logical operator needs only 1 true value.it checks from start aur jidhr value true mil jaye us se agay value check nahi krta.isi liye sirf 7 print kre ga aur agay values ko check bhi nahi kre ga
+
 //conditional statements
 
 // if statement
@@ -180,6 +184,43 @@ age3 >= 18 ? console.log("adult") : console.log("not adult"); //simpler , compac
 let result = marks2 >= 33 ? "you are pass" : "you are fail";
 
 console.log(result); */
+
+//switch
+
+let num2 = 3;
+
+switch (num2) {
+  case 1:
+    console.log("A");
+    break;
+  case 2:
+    console.log("B");
+    break;
+  case 3:
+    console.log("C");
+    break;
+  case 4:
+    console.log("D");
+    break;
+  default:
+    console.log("F");
+}
+
+let name2 = "rajab";
+
+switch (name2) {
+  case "ahmed":
+    console.log("ahmed");
+    break;
+  case "rajab":
+    console.log("rajab");
+    break; //agar break nahin likhen ge to condition sahi hone k bad agay wali sari conditions ka kam bhi hoga(mtlb ali aur myname dono print hon ge)
+  case "ali":
+    console.log("ali");
+    break;
+  default:
+    console.log("myname");
+}
 
 // practise question 1
 

@@ -279,3 +279,14 @@ let arrMul = arr.reduce((prev, val) => {
   return prev * val;
 });
 console.log(`product of arr = ${arrMul}`);
+
+// palindrome checking (string ko argument mei le kr palindrome check krne ka tariqa)
+
+/* let palinCheck = (str) => {
+  if (str === str.split("").reverse().join("")) {
+    console.log("it is palindrome");
+  } else {
+    console.log("it is Not a palindrome");
+  }
+};
+palinCheck(prompt("Enter your name to check palindrome")); */

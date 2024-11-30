@@ -162,3 +162,11 @@ console.log(companies);
 let arr = [1, 2, 3, 4, 111, 43432, 5];
 let newArr = Math.max(...arr);
 console.log(newArr);
+
+// joining all elements of array into string
+console.log(["rajab", "ali", "dildar"].join(""));
+
+// reversing array
+
+let arr2 = [1, 2, 3, 4, 5];
+console.log(arr2.reverse());

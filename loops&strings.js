@@ -260,6 +260,12 @@ console.log(str77.replace(`hello`, `kia hal hai`));
 }
 myFunc(prompt("enter a"), prompt("enter b")); */
 
+//converting string into object
+
+let str44 = "rajabAli";
+str44 = new String("rajabAli");
+console.log(str44);
+
 // practise question
 
 let fullName2 = prompt(`enter your full name.\nDon't use spaces`);
