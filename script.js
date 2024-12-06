@@ -16,7 +16,7 @@ let y = BigInt("123");
 // creating objects
 
 const student1 = {
-  // key : value
+  // key : value,
   fullName: "Rajab Ali",
   age: 24,
   marks: 50,
@@ -28,6 +28,7 @@ const student1 = {
 student1["fullName"] = "Rajab Dildar"; // overwritting fullName key of object student1
 student1.age = 26; // overwritting age key of object student1 in other way
 student1.marks = student1["marks"] + 10; // overwritting (increasing value of) marks key of object student1
+student1.institute = "UAF"; //adding another key value pair in student1 object
 
 // Arithmetic Operators
 
@@ -37,6 +38,7 @@ let c = a * b;
 
 console.log("a =", a, "& b =", b);
 console.log("a + b =", a + b);
+console.log(`a + b = ${a + b}`); //using template literals
 console.log("a - b =", a - b);
 console.log("a * b =", c);
 console.log("a / b =", a / b);
@@ -96,8 +98,8 @@ let i = 5;
 
 // let cond1 = h > i;
 // let cond1 = h >= i;
-let cond1 = h !== i;
-let cond2 = h === 6;
+let cond1 = h !== i; //true (6 is not equal to 5)
+let cond2 = h === 6; //true (h is  equal to 6)
 
 console.log("cond1 && cond2 =", cond1 && cond2); // if both two conditions are true , then && will give answer true
 console.log("cond1 || cond2 =", cond1 || cond2); // if both two conditions or at least one condition is true , then || will give answer true

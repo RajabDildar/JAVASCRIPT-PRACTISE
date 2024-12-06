@@ -127,6 +127,22 @@ let upLaptops = laptops.shift();
 console.log("updated laptops list is \n", laptops);
 console.log("deleted laptop  is \n", upLaptops);
 
+// sort method (sort array in alphabetical order and overwrites original array)
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+console.log("sorted array (fruits) =", fruits); // Output: ["Apple", "Banana", "Mango", "Orange"]
+
+// toreversed method(to reverse an array)
+console.log("reversed fruits array = ", fruits.toReversed());
+
+// fill method
+
+let arr6 = [1, 2, 3, 4, 5, 6];
+console.log(arr6);
+arr6.fill("rajab"); //fill method array k har index pe "rajab" likh de ga
+console.log(arr6);
+
 // slice method
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(numbers.slice(1, 5));
