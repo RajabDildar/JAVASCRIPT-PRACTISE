@@ -143,6 +143,19 @@ console.log(arr6);
 arr6.fill("rajab"); //fill method array k har index pe "rajab" likh de ga
 console.log(arr6);
 
+//find method
+
+let arr7 = [3, 2, 1, 0, -1, -2, -3];
+let arr7res = arr7.find((num) => {
+  return num < 0;
+});
+console.log(`arr7res = ${arr7res}`);
+
+//findIndex method
+
+let arr7res2 = arr7.findIndex((num) => num < 0);
+console.log(`arr7res2 = ${arr7res2}`); //this will give 4 because first value which is lees than 0 is at index 4.
+
 // slice method
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(numbers.slice(1, 5));
