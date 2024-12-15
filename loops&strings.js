@@ -10,6 +10,27 @@ for (let k = 20; k > 10; k--) {
   console.log("practise");
 }
 
+// reverse counting
+for (let i = 5; i >= 1; i--) {
+  console.log(i);
+}
+
+for (let i = 0; i <= 6; i++) {
+  if (i == 4) {
+    break;
+  } else {
+    console.log(i);
+  }
+}
+
+for (let i = 0; i <= 6; i++) {
+  if (i == 4) {
+    continue; //continue agay wali code execution rok de ga aur loop continue kre ga (yahan 4 skip ho jaye ga)
+  } else {
+    console.log(i);
+  }
+}
+
 //rough syntax       for (variable;condition;updation){task}
 
 //Calculate sum of 1 to 5
@@ -80,6 +101,19 @@ for (let val of str2) {
   size++; //it is also a task
 }
 console.log("str2 size = ", size);
+
+//substring
+console.log(str.substring(2)); //v
+console.log(str.substring(2, 5));
+
+// " " inside string
+
+console.log('this is a "word" ');
+// split
+
+let sentence = "Hello Jee Kaise ho saare";
+let words = sentence.split("");
+console.log(words);
 
 //for-of loop in arrays
 
