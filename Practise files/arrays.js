@@ -199,3 +199,21 @@ console.log(["rajab", "ali", "dildar"].join(""));
 
 let arr2 = [1, 2, 3, 4, 5];
 console.log(arr2.reverse());
+
+let [f, g, ...rest] = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(f, g, rest);
+
+let obj = {
+  a: 1,
+  b: 2,
+  c: 3,
+  d: 4,
+};
+
+let { a, b } = obj;
+console.log(a, b);
+
+//... is spread operator
+
+let arr8 = [1, 2, 3, 4, 5, 6];
+console.log(...arr8);

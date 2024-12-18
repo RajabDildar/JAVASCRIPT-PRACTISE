@@ -18,22 +18,29 @@
   transform: scale(0.8);
 }
 
-form {
+.wrapper {
   display: flex;
   flex-direction: column;
 }
 
-form p {
+.wrapper p {
   text-align: end;
+  height: 2rem;
+  font-size: 1.5rem;
+  width: 23rem;
+  margin: auto;
 }
 
-form input {
+.wrapper input {
   padding: 0.5rem;
   background-color: black;
   color: white;
   text-align: end;
   font-size: 2rem;
-  /* caret-color: transparent; */
+  width: 23rem;
+  margin: auto;
+  border: none;
+  caret-color: transparent;
   pointer-events: none;
 
   &::-webkit-inner-spin-button,
@@ -44,6 +51,10 @@ form input {
   &:focus {
     outline: none;
   }
+
+  &::placeholder {
+    color: white;
+  }
 }
 
 .buttons {
@@ -52,7 +63,7 @@ form input {
   display: grid;
   gap: 1rem;
   grid-template-areas:
-    "AC AC DEL Divide"
+    "DEL DEL AC Divide"
     "seven eight nine Mul"
     "four five six Minus"
     "one two three plus"
@@ -81,11 +92,12 @@ form input {
   grid-area: AC;
   background-color: #a8a6a7;
   color: black;
-  width: 11rem;
   border-radius: 3rem;
 }
 
 .btnDEL {
+  width: 11rem;
+  border-radius: 3rem;
   grid-area: DEL;
   background-color: #a8a6a7;
   color: black;
