@@ -1,4 +1,4 @@
 # JAVASCRIPT PRACTISE REPO
 
 <br>
-this is a javascript practise repo used for revision
+while learning JavaScript,I practice code in this repository.
