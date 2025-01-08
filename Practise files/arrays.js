@@ -217,3 +217,12 @@ console.log(a, b);
 
 let arr8 = [1, 2, 3, 4, 5, 6];
 console.log(...arr8);
+
+const arr9 = [2, 4, 6, 8];
+
+const allEven = arr9.every((num) => num % 2 === 0);
+
+console.log(allEven); // Output: true
+
+const minValue = Math.min(10, 20, 5, 30);
+console.log(minValue); // Output: 5

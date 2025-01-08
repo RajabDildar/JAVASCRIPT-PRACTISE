@@ -290,3 +290,10 @@ console.log(`product of arr = ${arrMul}`);
   }
 };
 palinCheck(prompt("Enter your name to check palindrome")); */
+
+//arguments in functions
+function random(...args) {
+  console.log(arguments);
+}
+
+random(6, 7, 8, 9, 10);
