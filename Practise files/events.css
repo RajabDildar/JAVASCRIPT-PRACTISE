@@ -40,3 +40,8 @@ div {
   border-radius: 50%;
   background: linear-gradient(to right, rgb(231, 226, 226) 50%, black 50%);
 }
+
+input {
+  background-color: #002;
+  padding: 1rem;
+}

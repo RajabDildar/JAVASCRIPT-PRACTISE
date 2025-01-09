@@ -60,3 +60,20 @@ modebtn.addEventListener("click", () => {
       "linear-gradient(to right, black 50%, rgb(231, 226, 226) 50%)";
   }
 });
+
+function print(evt) {
+  console.log(this.innerText);
+}
+document.querySelector("p").addEventListener("click", print);
+document.querySelector("h2").addEventListener("click", print);
+document.querySelector("h3").addEventListener("click", print);
+let input = document.querySelector("input");
+input.addEventListener("change", (evt) => {
+  console.log(input.value);
+  evt.target.style.border = "3px solid red";
+});
+
+input.addEventListener("input", (evt) => {
+  console.log(input.value);
+  document.querySelector("#p1").innerText = input.value;
+});
