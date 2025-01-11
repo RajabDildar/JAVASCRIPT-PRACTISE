@@ -1,10 +1,12 @@
 document.querySelector("#btn1").onclick = () => {
   console.log("you've clicked the button");
 };
+
 // btn1.onclick();//we can also call the function
 document.querySelector("#btn2").ondblclick = () => {
   console.log("you've clicked the button 2x");
 };
+
 //JS has an event obj which stores information about event.we can access it by passing it as an argument in function (as below)
 document.querySelector("#btn3").onclick = (evt) => {
   console.log(evt);
@@ -76,4 +78,11 @@ input.addEventListener("change", (evt) => {
 input.addEventListener("input", (evt) => {
   console.log(input.value);
   document.querySelector("#p1").innerText = input.value;
+});
+
+//stoping event bubbling when required for nested elements
+
+input.addEventListener("input", (evt) => {
+  evt.stopPropagation(); //stoping event bubbling
+  console.log(`input was clicked`);
 });
